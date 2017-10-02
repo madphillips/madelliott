@@ -1,9 +1,9 @@
 {
   "name": "wedding-website",
   "dependencies": {
-    "next": "^3.2.2",
-    "react": "^15.6.2",
-    "react-dom": "^15.6.2"
+    "next": "4.0.0-beta.2",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
   },
   "devDependencies": {},
   "scripts": {
