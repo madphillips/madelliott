@@ -1,5 +1,5 @@
 const Photos = () => (
-  <div>
+  <div id="photos">
     <p>Photos</p>
   </div>
 )

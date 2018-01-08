@@ -1,5 +1,5 @@
 const Contact = () => (
-  <div>
+  <div id="contact-us">
     <p>Contact Us</p>
   </div>
 )

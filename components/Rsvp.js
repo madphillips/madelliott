@@ -1,5 +1,5 @@
 const Rsvp = () => (
-  <div>
+  <div id="rsvp">
     <p>RSVP</p>
   </div>
 )

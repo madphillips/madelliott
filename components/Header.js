@@ -1,19 +1,20 @@
 import Nav from './Nav'
+import styled, { injectGlobal } from "styled-components";
+
+injectGlobal`
+  body {
+    background-color: rgb(242,242,242);
+  }
+`;
+
+const HeroImage = styled.img`
+  width: 100%;
+`;
 
 const Header = () => (
   <div>
     <Nav />
-    <img class="hero-image" src="/static/hero-image.jpg" />
-    <style jsx>{`
-      .hero-image {
-        width: 100%;
-      }
-      `}</style>
-      <style global jsx>{`
-      body {
-        background-color: rgb(242,242,242);
-      }
-      `}</style>
+    <HeroImage src="/static/hero-image.jpg" />
   </div>
 )
 

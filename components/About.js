@@ -1,5 +1,5 @@
 const About = () => (
-  <div>
+  <div id="about-us">
     <p>About</p>
   </div>
 )

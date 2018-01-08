@@ -1,40 +1,43 @@
-import Link from 'next/link'
+import styled from "styled-components";
+
+const NavWrapper = styled.nav`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  ul {
+
+  }
+
+  li {
+
+  }
+`;
 
 const Nav = () => (
-  <nav>
+  <NavWrapper>
     <ul>
       <li>
-        <Link href="/">
-          <a>About Us</a>
-        </Link>
+        <a href="#about-us">About Us</a>
       </li>
       <li>
-        <Link href="/">
-          <a>Wedding Details</a>
-        </Link>
+        <a href="#wedding-details">Wedding Details</a>
       </li>
       <li>
-        <Link href="/">
-          <a>Photos</a>
-        </Link>
+        <a href="#photos">Photos</a>
       </li>
       <li>
-        <Link href="/">
-          <a>Registry</a>
-        </Link>
+        <a href="#registry">Registry</a>
       </li>
       <li>
-        <Link href="/">
-          <a>RSVP</a>
-        </Link>
+        <a href="#rsvp">RSVP</a>
       </li>
       <li>
-        <Link href="/">
-          <a>Contact Us</a>
-        </Link>
+        <a href="#contact-us">Contact Us</a>
       </li>
     </ul>
-  </nav>
+  </NavWrapper>
 )
 
 export default Nav;

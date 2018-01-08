@@ -1,5 +1,5 @@
 const Details = () => (
-  <div>
+  <div id="details">
     <p>Details</p>
   </div>
 )

@@ -1,5 +1,5 @@
 const Registry  = () => (
-  <div>
+  <div id="registry">
     <p>Registry</p>
   </div>
 )
