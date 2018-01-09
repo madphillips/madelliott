@@ -17,23 +17,21 @@ const NavWrapper = styled.nav`
     justify-content: center;
   }
 
-  li {
+  a {
     flex: 1;
     border-left: 2px solid ${COLORS.gray};
     border-right: 2px solid ${COLORS.gray};
     padding: 20px 0;
     text-align: center;
     text-transform: uppercase;
-  }
-
-  a {
     text-decoration: none;
+    letter-spacing: -1px;
     color: ${COLORS.green};
   }
-  li:hover {
+  a:hover {
     background-color: ${COLORS.green};
     
-    a {
+    li {
       color: white;
     }
   }
@@ -42,24 +40,24 @@ const NavWrapper = styled.nav`
 const Nav = () => (
   <NavWrapper>
     <ul>
-      <li>
-        <a href="#about-us">About Us</a>
-      </li>
-      <li>
-        <a href="#wedding-details">Wedding Details</a>
-      </li>
-      <li>
-        <a href="#photos">Photos</a>
-      </li>
-      <li>
-        <a href="#registry">Registry</a>
-      </li>
-      <li>
-        <a href="#rsvp">RSVP</a>
-      </li>
-      <li>
-        <a href="#contact-us">Contact Us</a>
-      </li>
+      <a href="#about-us">
+        <li>About Us</li>
+      </a>
+      <a href="#wedding-details">
+        <li>Wedding Details</li>
+      </a>
+      <a href="#photos">
+        <li>Photos</li>
+      </a>
+      <a href="#registry">
+        <li>Our Registry</li>
+      </a>
+      <a href="#rsvp">
+        <li>RSVP</li>
+      </a>
+      <a href="#contact-us">
+        <li>Contact Us</li>
+      </a>
     </ul>
   </NavWrapper>
 )

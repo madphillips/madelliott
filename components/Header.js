@@ -22,17 +22,14 @@ const HeroText = styled.div`
 
   h2 {
     color: ${COLORS.green};
-    font-size: 1.75em;
   }
   h2 span {
     color: ${COLORS.darkgray};
     line-height: 2.25em;
-    
   }
 
   h1 {
     color: ${COLORS.darkgray};
-    font-size: 2.5em;
     margin: 0;
   }
 `;
