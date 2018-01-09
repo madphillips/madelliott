@@ -5,7 +5,15 @@ import Contact from '../components/Contact'
 import Photos from '../components/Photos'
 import Registry from '../components/Registry'
 import Rsvp from '../components/Rsvp'
+import styled, { injectGlobal } from "styled-components";
+import { COLORS, FONTS } from '../constants';
 
+injectGlobal`
+  body {
+    background-color: ${COLORS.gray};
+    font-family: ${FONTS.serif};
+  }
+`;
 
 export default () => (
   <div>
@@ -16,6 +24,5 @@ export default () => (
     <Registry />
     <Rsvp />
     <Contact />
-    <p>Tester text here</p>
   </div>
 )
