@@ -13,9 +13,8 @@ const Quote = styled.p`
   border: 1px solid ${COLORS.darkgray};
   padding: 1.5em 2em;
   background-color: ${COLORS.gray};
-  color: ${COLORS.blue};
+  color: ${props => COLORS[props.color || "darkgray"]};
   margin: 1.5em 0;
-
 `;
 
 const Col = styled.div`
@@ -39,12 +38,12 @@ const Col = styled.div`
   }
 `;
 
-const About = () => (
+const About = props => (
   <AboutWrapper id="about-us">
     <Col>
       <h2>ABOUT US</h2>
       <div>
-        <Quote>
+        <Quote color="pink">
           "Elliott is one of the constants in my life. Always so kind and full of laughter. He is forever supportive
           and I'm so thankful that he pushes me to be the best I can be. I can't imagine life without him."
         </Quote>
@@ -55,7 +54,7 @@ const About = () => (
            good friends. After a couple years, they started dating and the rest is ancient history!
            This January they will celebrate their 11th year together.
         </p>
-        <Quote>
+        <Quote color="blue">
           "Elliott is one of the constants in my life. Always so kind and full of laughter. He is forever supportive
           and I'm so thankful that he pushes me to be the best I can be. I can't imagine life without him."
         </Quote>
