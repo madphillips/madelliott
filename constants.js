@@ -9,5 +9,5 @@ export const COLORS = {
 
 export const FONTS = {
   serif: "cochin",
-  sans: "futura"
+  sans: "gotham"
 };
