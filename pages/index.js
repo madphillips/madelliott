@@ -12,6 +12,7 @@ injectGlobal`
   body {
     background-color: ${COLORS.gray};
     font-family: ${FONTS.serif};
+    margin: 0 2em;
   }
 
   p {

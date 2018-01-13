@@ -1,5 +1,7 @@
 import styled, { injectGlobal } from "styled-components";
 import { COLORS, FONTS, HEADERSIZE } from '../constants';
+import React from 'react';
+import {Flex, Box} from 'grid-styled';
 
 const AboutWrapper = styled.div`
   padding: 3em 0 0 0;
