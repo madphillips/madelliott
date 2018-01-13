@@ -34,7 +34,7 @@ const Col = styled(Box)`
 `;
 
 const Registry  = () => (
-  <RegistryWrapper>
+  <RegistryWrapper id="registry">
     <h2>Registry</h2>
     <p>
       The greatest wedding gift you could give to Maddie and Elliott is the pleasure of your company on their 

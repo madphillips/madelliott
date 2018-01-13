@@ -1,7 +1,6 @@
 import Header from '../components/Header'
 import About from '../components/About'
 import Details from '../components/Details'
-import Contact from '../components/Contact'
 import Photos from '../components/Photos'
 import Registry from '../components/Registry'
 import Rsvp from '../components/Rsvp'
@@ -23,6 +22,13 @@ injectGlobal`
   }
   h2 {
     font-size: 1.75em;
+  }
+  h3 {
+    font-size: 1.25em;
+  }
+  h4 {
+    font-size: 1em;
+    text-transform: uppercase;
   }
 `;
 
@@ -52,6 +58,5 @@ export default () => (
     <Photos />
     <Registry />
     <Rsvp />
-    <Contact />
   </div>
 )
