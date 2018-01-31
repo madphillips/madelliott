@@ -8,6 +8,7 @@ export const COLORS = {
 };
 
 export const FONTS = {
-  serif: "cochin",
-  sans: "gotham"
+  displaySerif: "Chronicle Display A, Chronicle Display B, Georgia, Times New Roman, serif",
+  displaySans: "Gotham A, Gotham B, Helvetica Neue, sans-serif",
+  textSerif: "Chronicle SSm A, Chronicle SSm B, Georgia, Times New Roman, serif"
 };

@@ -15,6 +15,7 @@ export default class MyDocument extends Document {
         <Head>
           <title>My page</title>
           {this.props.styleTags}
+          <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/675456/7247592/css/fonts.css" />
         </Head>
         <body>
           <Main />
