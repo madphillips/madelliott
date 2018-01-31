@@ -7,7 +7,12 @@ export const COLORS = {
   blue: "rgb(179,205,228)"
 };
 
+const baseFonts = '"Helvetica Neue", Arial, sans-serif';
+
 export const FONTS = {
-  serif: "cochin",
-  sans: "gotham"
+  display: `"Gotham A", "Gotham B", ${baseFonts}`,
+  text: `"Gotham SSm A", "Gotham SSm B", ${baseFonts}`
 };
+
+FONTS.sans = FONTS.text;
+FONTS.serif = FONTS.display;

@@ -25,12 +25,11 @@ const RegistryWrapper = styled.div`
 const Col = styled(Box)`
   min-width: 400px;
   text-align: center;
+`;
 
-  img {
-    max-width: 300px;
-    min-width: 150px;
-    margin: 0 auto;
-  }
+const VendorLogo = styled.img`
+  max-width: 300px;
+  height: 220px;
 `;
 
 const Registry  = () => (
@@ -44,12 +43,12 @@ const Registry  = () => (
     <Flex wrap="wrap" justify="center" align="flex-start">
       <Col>
         <a href="https://www.crateandbarrel.com/gift-registry/maddie-phillips-and-elliott-pogue/r5720998" target="_blank">
-          <img src="/static/crateandbarrel.svg" height="220" />
+          <VendorLogo src="/static/crateandbarrel.svg" />
         </a>
       </Col>
       <Col>
         <a href="https://www.amazon.com/wedding/maddie-phillips-elliott-pogue-richmond-march-2018/registry/12WY5AFUB093R" target="_blank">
-          <img src="/static/amazon.svg" height="220"/>
+          <VendorLogo src="/static/amazon.svg" />
         </a>
       </Col>
     </Flex>

@@ -54,10 +54,8 @@ const Details = () => (
         </ul>
       </Col>
       <Col w={[ 1, 1/2]}>
-        <h3>The Wedding</h3>
-      </Col>
-      <Col w={[ 1, 1/2]}>
-        <h3>The Wedding</h3>
+        <h3>Accomodations</h3>
+        <p>List nearby hotels and B&Bs here</p>
       </Col>
     </Flex>
   </DetailsWrapper>

@@ -10,7 +10,7 @@ import { COLORS, FONTS } from '../constants';
 injectGlobal`
   body {
     background-color: ${COLORS.gray};
-    font-family: ${FONTS.serif};
+    font-family: ${FONTS.text};
     margin: 0 2em;
   }
 
@@ -19,6 +19,7 @@ injectGlobal`
   }
   h1 {
     font-size: 2.5em;
+    font-weight: 300;
   }
   h2 {
     font-size: 1.75em;
