@@ -12,5 +12,6 @@ const baseFonts = '"Helvetica Neue", Arial, sans-serif';
 export const FONTS = {
   displaySerif: "Chronicle Display A, Chronicle Display B, Georgia, Times New Roman, serif",
   displaySans: "Gotham A, Gotham B, Helvetica Neue, sans-serif",
-  textSerif: "Chronicle SSm A, Chronicle SSm B, Georgia, Times New Roman, serif"
+  textSerif: "Chronicle SSm A, Chronicle SSm B, Georgia, Times New Roman, serif",
+  textSans: "Gotham SSm A, Gotham SSm B, Helvetica Neue, sans-serif",
 };

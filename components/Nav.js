@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import { COLORS } from "../constants";
+import { BoxContainer as Container } from "./Container";
+import { FONTS, COLORS } from "../constants";
 
 const NavWrapper = styled.nav`
   position: fixed;
@@ -7,55 +8,47 @@ const NavWrapper = styled.nav`
   left: 0;
   width: 100%;
   z-index: 100;
+  font-family: ${FONTS.textSans};
+  font-weight: 700;
+  background-color: rgba(255,255,255,0.92);
+`;
 
-  ul {
-    margin: 0;
-    padding: 0;
-    background-color: rgba(255,255,255,0.8);
-    list-style: none;
-    display: flex;
-    justify-content: center;
-  }
+const Link = styled.a`
+  display: inline-block;
+  font-size: 16px;
+  padding: 20px 24px;
+  margin: 0 16px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: -1px;
+  color: ${COLORS.green};
+  transition: 0.1s color;
 
-  a {
-    flex: 1;
-    border-left: 2px solid ${COLORS.gray};
-    border-right: 2px solid ${COLORS.gray};
-    padding: 20px 0;
-    text-align: center;
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: -1px;
-    color: ${COLORS.green};
-  }
-  a:hover {
-    background-color: ${COLORS.green};
-    
-    li {
-      color: white;
-    }
+  &:hover {
+    color: ${COLORS.darkgray};
   }
 `;
 
 const Nav = () => (
   <NavWrapper>
-    <ul>
-      <a href="#about-us">
-        <li>About Us</li>
-      </a>
-      <a href="#wedding-details">
-        <li>Wedding Details</li>
-      </a>
-      <a href="#photos">
-        <li>Photos</li>
-      </a>
-      <a href="#registry">
-        <li>Our Registry</li>
-      </a>
-      <a href="#rsvp">
-        <li>RSVP</li>
-      </a>
-    </ul>
+    <Container style={{ textAlign: "center" }}>
+      <Link href="#about-us">
+        About Us
+      </Link>
+      <Link href="#wedding-details">
+        Wedding Details
+      </Link>
+      <Link href="#photos">
+        Photos
+      </Link>
+      <Link href="#registry">
+        Our Registry
+      </Link>
+      <Link href="#rsvp">
+        RSVP
+      </Link>
+    </Container>
   </NavWrapper>
 )
 

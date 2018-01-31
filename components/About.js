@@ -1,12 +1,12 @@
-import styled, { injectGlobal } from "styled-components";
-import { COLORS, FONTS, HEADERSIZE } from '../constants';
 import React from 'react';
 import {Flex, Box} from 'grid-styled';
+import styled, { injectGlobal } from "styled-components";
+import { COLORS, FONTS, HEADERSIZE } from '../constants';
+import { P } from "./Text";
+import Container from "./Container";
 
-const AboutWrapper = styled.div`
+const AboutWrapper = styled(Container)`
   padding: 3em 0 0 0;
-  display: flex;
-  flex-wrap: wrap;
   justify-content: center;
 `;
 
@@ -17,18 +17,6 @@ const Col = styled.div`
   flex-wrap: ${props => [props.wrap || "nowrap"]};
   justify-content: ${props => [props.justifyContent || "flex-start"]};
   align-content: ${props => [props.alignContent || "stretch"]};
-
-  h2 {
-    color: ${COLORS.darkgreen};
-    text-align: center;
-    margin: 0;
-  }
-  p {
-    line-height: 1.5em;
-  }
-  div {
-    margin: 3em 0 3em 5em;
-  }
 
   img {
     max-height: 550px;
@@ -63,15 +51,14 @@ const About = props => (
   <AboutWrapper id="about-us">
     <Col width="45%" display="flex" justifyContent="center" alignContent="center" wrap="wrap">
       <h2>ABOUT US</h2>
-      <div>
-        <p>Maddie and Elliott met a Freeman High School in Richmond, VA. On the first day of school,
-           they met in the bus ramp where they discovered they not only ride the same bus, they actually 
-           live just a couple houses away from each other. A few weeks later, Elliott asked Maddie to 
-           Homecoming. She refused, instead wanting to get to know Elliott first. They quickly became 
-           good friends. After a couple years, they started dating and the rest is ancient history!
-           This January they will celebrate their 11th year together.
-        </p>
-      </div>
+      <P>
+        Maddie and Elliott met a Freeman High School in Richmond, VA. On the first day of school,
+        they met in the bus ramp where they discovered they not only ride the same bus, they actually 
+        live just a couple houses away from each other. A few weeks later, Elliott asked Maddie to 
+        Homecoming. She refused, instead wanting to get to know Elliott first. They quickly became 
+        good friends. After a couple years, they started dating and the rest is ancient history!
+        This January they will celebrate their 11th year together.
+      </P>
     </Col>
     <Col width="55%">
       <ImageWrapper>

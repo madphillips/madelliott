@@ -1,4 +1,5 @@
 import styled, { injectGlobal } from "styled-components";
+import Nav from '../components/Nav'
 import Header from '../components/Header'
 import About from '../components/About'
 import Details from '../components/Details'
@@ -10,6 +11,8 @@ import { COLORS, FONTS } from '../constants';
 
 injectGlobal`
   body {
+    margin: 0;
+    padding: 0;
     background-color: ${COLORS.gray};
     font-family: ${FONTS.displaySerif};
     color: #595959;
@@ -31,6 +34,7 @@ const IntroParagraph = styled.div`
 
 export default () => (
   <div>
+    <Nav />
     <Header />
     <About />
     <Details />
@@ -38,4 +42,4 @@ export default () => (
     <Registry />
     <Rsvp />
   </div>
-)
+);
