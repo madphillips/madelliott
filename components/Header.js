@@ -1,4 +1,5 @@
 import Nav from './Nav'
+import Countdown from "./Countdown";
 import styled, { injectGlobal } from "styled-components";
 import { COLORS, FONTS } from '../constants';
 
@@ -18,7 +19,7 @@ const HeroText = styled.div`
   margin: auto;
   z-index: 100;
   text-align: center;
-  font-family: ${FONTS.serif};
+  font-family: ${FONTS.display};
 
   h2 {
     color: ${COLORS.green};
@@ -48,10 +49,10 @@ const Header = () => (
       <HeroText>
         <h2>WEDDING<br /><span>of</span></h2>
         <h1>Maddie <span>&amp;</span> Elliott</h1>
-        <h2><span>in </span>72 DAYS</h2>
+        <h2><span>in </span><Countdown /></h2>
       </HeroText>
     </Hero>
   </div>
-)
+  )
 
 export default Header;

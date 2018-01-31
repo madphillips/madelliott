@@ -2,7 +2,6 @@ import styled, { injectGlobal } from "styled-components";
 import Header from '../components/Header'
 import About from '../components/About'
 import Details from '../components/Details'
-import Contact from '../components/Contact'
 import Photos from '../components/Photos'
 import Registry from '../components/Registry'
 import Rsvp from '../components/Rsvp'
@@ -38,6 +37,5 @@ export default () => (
     <Photos />
     <Registry />
     <Rsvp />
-    <Contact />
   </div>
 )

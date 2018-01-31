@@ -55,9 +55,6 @@ const Nav = () => (
       <a href="#rsvp">
         <li>RSVP</li>
       </a>
-      <a href="#contact-us">
-        <li>Contact Us</li>
-      </a>
     </ul>
   </NavWrapper>
 )

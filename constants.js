@@ -7,6 +7,8 @@ export const COLORS = {
   blue: "rgb(179,205,228)"
 };
 
+const baseFonts = '"Helvetica Neue", Arial, sans-serif';
+
 export const FONTS = {
   displaySerif: "Chronicle Display A, Chronicle Display B, Georgia, Times New Roman, serif",
   displaySans: "Gotham A, Gotham B, Helvetica Neue, sans-serif",
