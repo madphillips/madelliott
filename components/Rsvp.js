@@ -1,23 +1,29 @@
 import styled, { injectGlobal } from "styled-components";
+import { Box } from "grid-styled";
+import Container from "./Container";
+import RsvpForm from "./RsvpForm";
 import { COLORS, FONTS, HEADERSIZE } from '../constants';
 
-const RSVPWrapper = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+const RsvpWrapper = styled.div`
+  padding: 80px 0;
+  background: #fff url('/static/rsvp-bg.jpg') 50% no-repeat;
 `;
 
-const Col = styled.div`
-  width: 90%;
-  min-width: 400px;
-  margin: auto;
+const RsvpContainer = styled.div`
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 690px;
+  min-height: 540px;
+  margin: 0 auto;
+  padding: 20px 40px;
+  background: #fff;
 
   h2 {
     text-align: center;
     color: ${COLORS.darkgreen};
-  }
-  div {
-    margin: 3em 5em;
   }
 
   img {
@@ -25,17 +31,21 @@ const Col = styled.div`
     width: auto;
     margin: 0 auto;
   }
+
+  div {
+    flex: 1;
+  }
 `;
 
-const Rsvp = () => (
-  <RSVPWrapper id="rsvp">
-    <Col>
-      <h2>RSVP</h2>
+const RSVP = () => (
+  <RsvpWrapper id="rsvp">
+    <RsvpContainer>
       <div>
-        <p>Test text here. Lorem ipsum etc etc etc...</p>
+        <h2>RSVP</h2>
+        <RsvpForm />
       </div>
-    </Col>
-  </RSVPWrapper>
+    </RsvpContainer>
+  </RsvpWrapper>
 )
 
-export default Rsvp
+export default RSVP;

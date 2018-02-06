@@ -1,0 +1,8 @@
+type Rsvp @model {
+  id: ID! @isUnique
+  attending: Boolean!
+  email: String!
+  primaryName: String!
+  otherNames: [String!]!
+  comments: String!
+}

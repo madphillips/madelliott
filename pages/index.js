@@ -1,3 +1,7 @@
+import ApolloClient from 'apollo-client'
+import { HttpLink, InMemoryCache } from 'apollo-client-preset'
+import { ApolloProvider } from "react-apollo";
+import fetch from "isomorphic-fetch";
 import styled, { injectGlobal } from "styled-components";
 import Nav from '../components/Nav'
 import Header from '../components/Header'
@@ -8,6 +12,11 @@ import Registry from '../components/Registry'
 import Rsvp from '../components/Rsvp'
 import { P } from "../components/Text";
 import { COLORS, FONTS } from '../constants';
+
+const client = new ApolloClient({
+  link: new HttpLink({ uri: "https://api.graph.cool/simple/v1/cjdc18xj31rtv01295al0jwct" }),
+  cache: new InMemoryCache().restore({})
+});
 
 injectGlobal`
   body {
@@ -33,13 +42,15 @@ const IntroParagraph = styled.div`
 `;
 
 export default () => (
-  <div>
-    <Nav />
-    <Header />
-    <About />
-    <Details />
-    <Photos />
-    <Registry />
-    <Rsvp />
-  </div>
+  <ApolloProvider client={client}>
+    <div>
+      <Nav />
+      <Header />
+      <About />
+      <Details />
+      <Photos />
+      <Registry />
+      <Rsvp />
+    </div>
+  </ApolloProvider>
 );
