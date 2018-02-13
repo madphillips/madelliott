@@ -15,8 +15,10 @@ const Button = styled(BaseButton)`
   border: 2px solid ${getColor};
   padding: 12px 46px;
   cursor: pointer;
-  transition: 0.4s color;
+  transition-duration: 0.4s;
+  transition-property: color, background, border-color;
   text-transform: uppercase;
+  text-decoration: none;
   letter-spacing: 1px;
 
   &:before {
@@ -30,12 +32,19 @@ const Button = styled(BaseButton)`
     transition: 0.35s transform ease-out;
   }
 
-  &:hover {
+  &:hover:not([disabled]) {
     color: #fff;
   }
 
-  &:hover:before {
+  &:hover:not([disabled]):before {
     transform: scaleX(1);
+  }
+
+  &[disabled] {
+    cursor: not-allowed;
+    color: rgb(180, 180, 180);
+    border-color: rgb(226, 226, 226);
+    background: rgb(226, 226, 226);
   }
 
   span {
