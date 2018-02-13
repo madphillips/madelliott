@@ -7,7 +7,6 @@ import Nav from '../components/Nav'
 import Header from '../components/Header'
 import About from '../components/About'
 import Details from '../components/Details'
-import Photos from '../components/Photos'
 import Registry from '../components/Registry'
 import Rsvp from '../components/Rsvp'
 import { P } from "../components/Text";
@@ -48,7 +47,6 @@ export default () => (
       <Header />
       <About />
       <Details />
-      <Photos />
       <Registry />
       <Rsvp />
     </div>
