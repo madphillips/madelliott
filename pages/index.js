@@ -8,6 +8,7 @@ import Header from '../components/Header'
 import About from '../components/About'
 import Details from '../components/Details'
 import Registry from '../components/Registry'
+import Faqs from '../components/Faqs'
 import Rsvp from '../components/Rsvp'
 import { P } from "../components/Text";
 import { COLORS, FONTS } from '../constants';
@@ -48,6 +49,7 @@ export default () => (
       <About />
       <Details />
       <Registry />
+      <Faqs />
       <Rsvp />
     </div>
   </ApolloProvider>
