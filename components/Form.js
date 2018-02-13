@@ -176,7 +176,7 @@ class Form extends React.Component {
               </P>
             </Fragment>
           )
-          : <P>We'll miss you at the wedding, but we'll be sure to catch up with you in some other fashion. 🙂</P>}
+          : <P>We'll miss you at the wedding, but we'll be sure to catch up with you in some other fashion. 😊</P>}
       </Box>
     )
   }
