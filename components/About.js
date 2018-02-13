@@ -64,12 +64,12 @@ const About = props => (
         <ImageWrapper>
           <img src="/static/engagement-photo-1.jpg" width="435" height="649"/>
           <Quote color="blue" left="-5%" top="-10px">
-              "Elliott is one of the constants in my life. Always so kind and full of laughter. He is forever supportive
-              and I'm so thankful that he pushes me to be the best I can be. I can't imagine life without him."
-          </Quote>
-          <Quote color="pink" right="-5%" bottom="0">
             "Elliott is one of the constants in my life. Always so kind and full of laughter. He is forever supportive
             and I'm so thankful that he pushes me to be the best I can be. I can't imagine life without him."
+          </Quote>
+          <Quote color="pink" right="-5%" bottom="0">
+            "Ever since I first saw Maddie's smile, I knew she was the one for me. I look forward to every day I get to
+            spend with her and her engaging and exuberant personality."
           </Quote>
         </ImageWrapper>
       </Col>
