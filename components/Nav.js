@@ -39,9 +39,6 @@ const Nav = () => (
       <Link href="#wedding-details">
         Wedding Details
       </Link>
-      <Link href="#photos">
-        Photos
-      </Link>
       <Link href="#registry">
         Our Registry
       </Link>
