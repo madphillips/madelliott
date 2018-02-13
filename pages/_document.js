@@ -13,7 +13,7 @@ export default class MyDocument extends Document {
     return (
       <html>
         <Head>
-          <title>My page</title>
+          <title>Maddie &amp; Elliott | Mar 23, 2018</title>
           {this.props.styleTags}
           <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/675456/7247592/css/fonts.css" />
         </Head>
