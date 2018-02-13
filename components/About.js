@@ -1,5 +1,6 @@
 import React from 'react';
 import {Flex, Box} from 'grid-styled';
+import Anchor from "./Anchor";
 import styled, { injectGlobal } from "styled-components";
 import { COLORS, FONTS, HEADERSIZE } from '../constants';
 import { P } from "./Text";
@@ -47,7 +48,8 @@ const Quote = styled.p`
 `;
 
 const About = props => (
-  <AboutWrapper id="about-us">
+  <AboutWrapper>
+    <Anchor id="about-us" title="About Us" />
     <Container>
       <Col width="45%" display="flex" justifyContent="center" alignContent="center" wrap="wrap">
         <h2>ABOUT US</h2>
