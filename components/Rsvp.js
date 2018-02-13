@@ -1,5 +1,6 @@
 import styled, { injectGlobal } from "styled-components";
 import { Box } from "grid-styled";
+import Anchor from "./Anchor";
 import Container from "./Container";
 import Form from "./Form";
 import { COLORS, FONTS, HEADERSIZE } from '../constants';
@@ -39,7 +40,8 @@ const RsvpContainer = styled.div`
 `;
 
 const RSVP = () => (
-  <RsvpWrapper id="rsvp">
+  <RsvpWrapper>
+    <Anchor id="rsvp" title="RSVP" />
     <RsvpContainer>
       <div>
         <h2>RSVP</h2>

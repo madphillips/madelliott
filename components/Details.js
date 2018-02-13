@@ -1,6 +1,7 @@
+import React from 'react';
 import styled, { injectGlobal } from "styled-components";
 import { COLORS, FONTS, HEADERSIZE } from '../constants';
-import React from 'react';
+import Anchor from "./Anchor";
 import {Flex, Box} from 'grid-styled';
 
 const DetailsWrapper = styled.div`
@@ -24,7 +25,8 @@ const Col = styled(Box)`
 `;
 
 const Details = () => (
-  <DetailsWrapper id="wedding-details">
+  <DetailsWrapper>
+    <Anchor id="wedding-details" title="Wedding Details" />
     <h2>DETAILS</h2>
     <FlexContainer wrap="wrap" justify="center">
       <Col w={[ 1, 1/2]}>

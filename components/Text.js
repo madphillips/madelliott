@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { FONTS } from "../constants";
+import { FONTS, COLORS } from "../constants";
 
 export const P = styled.p`
   font-family: ${FONTS.textSans};
@@ -7,3 +7,7 @@ export const P = styled.p`
   line-height: 1.4;
   font-weight: 300;
 `;
+
+export const Link = styled.a`
+  color: ${COLORS.green};
+`

@@ -1,7 +1,8 @@
+import React from 'react';
 import styled, { injectGlobal } from "styled-components";
 import { COLORS, FONTS, HEADERSIZE } from '../constants';
-import React from 'react';
 import {Flex, Box} from 'grid-styled';
+import Anchor from "./Anchor";
 
 const RegistryWrapper = styled.div`
   padding: 3em 0 0 0;
@@ -33,7 +34,8 @@ const VendorLogo = styled.img`
 `;
 
 const Registry  = () => (
-  <RegistryWrapper id="registry">
+  <RegistryWrapper>
+    <Anchor id="registry" title="Registry" />
     <h2>Registry</h2>
     <p>
       The greatest wedding gift you could give to Maddie and Elliott is the pleasure of your company on their 

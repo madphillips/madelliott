@@ -13,6 +13,7 @@
     "react": "^16.2.0",
     "react-apollo": "^2.0.4",
     "react-dom": "^16.2.0",
+    "react-on-screen": "^2.0.3",
     "styled-components": "^2.4.0",
     "styled-system": "^1.1.1"
   },
@@ -22,6 +23,7 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start -p $PORT",
+    "heroku-postbuild": "next build"
   }
 }
