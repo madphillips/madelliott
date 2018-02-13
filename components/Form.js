@@ -1,8 +1,9 @@
-import React from "react";
+import React, { Fragment } from "react";
 import styled from "styled-components";
 import gql from "graphql-tag";
 import { graphql } from "react-apollo";
 import { Flex, Box } from "grid-styled";
+import { P, Link } from "./Text";
 import Button from "./Button";
 import { FONTS } from "../constants";
 
@@ -127,8 +128,8 @@ class Form extends React.Component {
             <Label htmlFor="attending">
               Are you attending?
               <Box pt="4px">
-                <Button size="small" color="green" variant={this.state.attending ? "solid" : undefined} onClick={() => this.setState({ attending: true })}>Yes</Button>
-                <Button size="small" color="green" variant={!this.state.attending ? "solid" : undefined} onClick={() => this.setState({ attending: false })}>No</Button>
+                <Button type="button" size="small" color="green" variant={this.state.attending ? "solid" : undefined} onClick={() => this.setState({ attending: true })}>Yes</Button>
+                <Button type="button" size="small" color="green" variant={!this.state.attending ? "solid" : undefined} onClick={() => this.setState({ attending: false })}>No</Button>
               </Box>
             </Label>
           </Box>
@@ -159,10 +160,30 @@ class Form extends React.Component {
       </form>
     );
   }
+
+  renderConfirmation() {
+    return (
+      <Box style={{ textAlign: "center" }}>
+        <P>Thank you for RSVPing!</P>
+        {this.state.attending
+          ? (
+            <Fragment>
+              <P>We look forward to seeing you at the wedding. 🎉</P>
+              <P>
+                If you need to make hotel accommodations, 
+                please refer to the <Link href="#wedding-details">Details</Link> section for lodging 
+                suggestions and other frequently asked questions.
+              </P>
+            </Fragment>
+          )
+          : <P>We'll miss you at the wedding, but we'll be sure to catch up with you in some other fashion. 🙂</P>}
+      </Box>
+    )
+  }
   
   render() {
     if (this.state.isSubmitted) {
-      return "Thanks!";
+      return this.renderConfirmation();
     }
 
     return this.renderForm();
