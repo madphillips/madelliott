@@ -43,7 +43,7 @@ const RSVP = () => (
     <RsvpContainer>
       <div>
         <h2>RSVP</h2>
-        <RsvpForm />
+        <Form />
       </div>
     </RsvpContainer>
   </RsvpWrapper>

@@ -38,7 +38,7 @@ const TextArea = styled.textarea`
   border: 1px solid rgb(210, 210, 210);
 `;
 
-class RsvpForm extends React.Component {
+class Form extends React.Component {
   constructor(props) {
     super(props);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -187,4 +187,4 @@ export default graphql(gql`
       id
     }
   }
-`)(RsvpForm);
+`)(Form);
