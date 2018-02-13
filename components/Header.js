@@ -63,7 +63,7 @@ const Header = () => (
     <HeroText>
       <HeroSvg style={{ width: "100%" }} />
       <Box mt={3}>
-        <Button as="a" color="green">
+        <Button as="a" href="#rsvp" color="green">
           RSVP
         </Button>
       </Box>
