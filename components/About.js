@@ -57,7 +57,7 @@ const About = props => (
           live just a couple houses away from each other. A few weeks later, Elliott asked Maddie to 
           Homecoming. She refused, instead wanting to get to know Elliott first. They quickly became 
           good friends. After a couple years, they started dating and the rest is ancient history!
-          This January they will celebrate their 11th year together.
+          This January they celebrated their 11th year together.
         </P>
       </Col>
       <Col width="55%">
