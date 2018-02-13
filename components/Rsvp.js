@@ -1,7 +1,7 @@
 import styled, { injectGlobal } from "styled-components";
 import { Box } from "grid-styled";
 import Container from "./Container";
-import RsvpForm from "./RsvpForm";
+import Form from "./Form";
 import { COLORS, FONTS, HEADERSIZE } from '../constants';
 
 const RsvpWrapper = styled.div`
@@ -24,6 +24,7 @@ const RsvpContainer = styled.div`
   h2 {
     text-align: center;
     color: ${COLORS.darkgreen};
+    margin-top: 0;
   }
 
   img {
