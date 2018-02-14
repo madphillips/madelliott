@@ -17,6 +17,17 @@
 # In the types.graphql you define your data schema
 types: ./types.graphql
 
+functions:
+  sendNotification:
+    type: subscription
+    query: ./src/sendNotification.graphql
+    isEnabled: true
+    handler:
+      code:
+        src: ./src/sendNotification.js
+        environment:
+          POSTMARK_API_KEY: fa89837c-ab33-4588-9a9a-fe6e882a6576
+
 # Model/Relation permissions are used to limit the API access
 # To take the burden of thinking about those while development, we
 # preconfigured the wildcard ("*") permission that allows everything
