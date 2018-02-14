@@ -42,6 +42,9 @@ const Nav = () => (
       <Link href="#registry">
         Our Registry
       </Link>
+      <Link href="#faqs">
+        FAQs
+      </Link>
       <Link href="#rsvp">
         RSVP
       </Link>
