@@ -16,12 +16,12 @@ app.prepare().then(() => {
   const server = express();
 
   if (process.env.NODE_ENV === "production") {
-    server.use((req, res) => {
+    server.use((req, res, nextMiddleware) => {
       const reqIsSecure = req.get("X-Forwarded-Proto") === "https";
       if (!reqIsSecure) {
         res.redirect(`https://${req.hostname}${req.url}`);
       } else {
-        next();
+        nextMiddleware();
       }
     })
   }

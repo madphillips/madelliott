@@ -1,10 +1,41 @@
 import React from 'react';
-import styled, { injectGlobal } from "styled-components";
+import styled, { css } from "styled-components";
 import { COLORS, FONTS, HEADERSIZE } from '../constants';
 import { P } from "./Text";
 import Anchor from "./Anchor";
 import Icon from "./Icon";
 import {Flex, Box} from 'grid-styled';
+
+const SECTIONS = {
+  "ceremony": {
+    title: "Ceremony Questions",
+    icon: ["far", "calendar-alt"]
+  },
+  "guest": {
+    title: "Guest Questions",
+    icon: "users"
+  },
+  "media": {
+    title: "Media Questions",
+    icon: "camera-retro"
+  },
+  "food": {
+    title: "Food & Drink Questions",
+    icon: "glass-martini"
+  },
+  "transportation": {
+    title: "Transportation Questions",
+    icon: "car"
+  },
+  "registry": {
+    title: "Registry Questions",
+    icon: "gift"
+  },
+  "contact": {
+    title: "Contact Questions",
+    icon: "envelope"
+  }
+};
 
 const FaqsWrapper = styled.div`
   padding: 5em 0 3em;
@@ -54,16 +85,23 @@ const FaqSectionTitle = styled.div`
   cursor: pointer;
   text-align: center;
   margin: 12px 24px;
+  transition: color 0.2s;
+
+  ${props => props.active && css`
+    color: ${COLORS.green};
+  `};
 
   &:hover {
     color: ${COLORS.green};
   }
+
   svg {
+    display: block;
     min-width: 36px;
     min-height: 36px;
-    display: block;
     margin: 10px auto;
   }
+
   span {
     margin: auto;
     text-transform: uppercase;
@@ -89,54 +127,31 @@ class Faqs extends React.Component {
     }
   }
 
+  renderButtons() {
+    return Object.keys(SECTIONS).map(sectionKey => {
+      const section = SECTIONS[sectionKey];
+      return (
+        <Col w={[1/2, 1/3, 1/4 ]}>
+          <FaqSectionTitle 
+            data-section={sectionKey}
+            onClick={this.handleSectionClick}
+            active={this.state.section === sectionKey}
+          >
+            <Icon icon={section.icon} />
+            <span>{section.title}</span>
+          </FaqSectionTitle>
+        </Col>
+      );
+    });
+  }
+
   render() {
     return (
       <FaqsWrapper>
         <Anchor id="faqs" title="Frequently Asked Questions" />
         <h2>Have Questions? Hopefully We Have Your Answer!</h2>
         <FlexContainer wrap="wrap" justify="center">
-          <Col w={[1/2, 1/3, 1/4 ]}>
-            <FaqSectionTitle onClick={this.handleSectionClick} data-section="ceremony">
-              <Icon icon={["far", "calendar-alt"]} />
-              <span>Ceremony Questions</span>
-            </FaqSectionTitle>
-          </Col>
-          <Col w={[1/2, 1/3, 1/4 ]}>
-            <FaqSectionTitle onClick={this.handleSectionClick} data-section="guest">
-              <Icon icon="users" />
-              <span>Guest Questions</span>
-            </FaqSectionTitle>
-          </Col>
-          <Col w={[1/2, 1/3, 1/4 ]}>
-            <FaqSectionTitle onClick={this.handleSectionClick} data-section="media">
-              <Icon icon="camera-retro" />
-              <span>Media Questions</span>
-            </FaqSectionTitle>
-          </Col>
-          <Col w={[1/2, 1/3, 1/4 ]}>
-            <FaqSectionTitle onClick={this.handleSectionClick} data-section="food">
-              <Icon icon="glass-martini" />
-              <span>Food &amp; Drink Questions</span>
-            </FaqSectionTitle>
-          </Col>
-          <Col w={[1/2, 1/3, 1/4 ]}>
-            <FaqSectionTitle onClick={this.handleSectionClick} data-section="transportation">
-              <Icon icon="car" />
-              <span>Transportation Questions</span>
-            </FaqSectionTitle>
-          </Col>
-          <Col w={[1/2, 1/3, 1/4 ]}>
-            <FaqSectionTitle onClick={this.handleSectionClick} data-section="registry">
-              <Icon icon="gift" />
-              <span>Registry Questions</span>
-            </FaqSectionTitle>
-          </Col>
-          <Col w={[1/2, 1/3, 1/4 ]}>
-            <FaqSectionTitle onClick={this.handleSectionClick} data-section="contact">
-              <Icon icon="envelope" />
-              <span>Contact Us</span>
-            </FaqSectionTitle>
-          </Col>
+          {this.renderButtons()}
         </FlexContainer>
         <FlexContainer>
           {this.state.section === "ceremony" && (
