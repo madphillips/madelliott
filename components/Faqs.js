@@ -69,6 +69,13 @@ const FaqQuestions = styled(Box)`
     }
   }
 
+  ul {
+    margin: auto;
+    max-width: 800px;
+    padding: 0 30px;
+    list-style: none;
+  }
+
   li {
     margin: 30px 0;
   }
