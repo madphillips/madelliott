@@ -1,7 +1,8 @@
+import React from 'react';
 import styled, { injectGlobal } from "styled-components";
 import { COLORS, FONTS, HEADERSIZE } from '../constants';
-import React from 'react';
 import { P } from "./Text";
+import Icon from "./Icon";
 import {Flex, Box} from 'grid-styled';
 
 const FaqsWrapper = styled.div`
@@ -68,43 +69,43 @@ class Faqs extends React.Component {
         <FlexContainer wrap="wrap" justify="center">
           <Col w={[1/2, 1/3, 1/4 ]}>
             <FaqSectionTitle onClick={this.handleSectionClick} data-section="ceremony">
-              <img src="https://www.iconexperience.com/_img/o_collection_png/green_dark_grey/512x512/plain/dog.png" />
+              <Icon icon={["far", "calendar-alt"]} />
               <span>Ceremony Questions</span>
             </FaqSectionTitle>
           </Col>
           <Col w={[1/2, 1/3, 1/4 ]}>
             <FaqSectionTitle onClick={this.handleSectionClick} data-section="guest">
-              <img src="https://www.iconexperience.com/_img/o_collection_png/green_dark_grey/512x512/plain/dog.png" />
+              <Icon icon="users" />
               <span>Guest Questions</span>
             </FaqSectionTitle>
           </Col>
           <Col w={[1/2, 1/3, 1/4 ]}>
             <FaqSectionTitle onClick={this.handleSectionClick} data-section="media">
-              <img src="https://www.iconexperience.com/_img/o_collection_png/green_dark_grey/512x512/plain/dog.png" />
+              <Icon icon="camera-retro" />
               <span>Media Questions</span>
             </FaqSectionTitle>
           </Col>
           <Col w={[1/2, 1/3, 1/4 ]}>
-          <FaqSectionTitle onClick={this.handleSectionClick} data-section="food">
-              <img src="https://www.iconexperience.com/_img/o_collection_png/green_dark_grey/512x512/plain/dog.png" />
+            <FaqSectionTitle onClick={this.handleSectionClick} data-section="food">
+              <Icon icon="glass-martini" />
               <span>Food &amp; Drink Questions</span>
             </FaqSectionTitle>
           </Col>
           <Col w={[1/2, 1/3, 1/4 ]}>
-          <FaqSectionTitle onClick={this.handleSectionClick} data-section="transportation">
-              <img src="https://www.iconexperience.com/_img/o_collection_png/green_dark_grey/512x512/plain/dog.png" />
+            <FaqSectionTitle onClick={this.handleSectionClick} data-section="transportation">
+              <Icon icon="car" />
               <span>Transportation Questions</span>
             </FaqSectionTitle>
           </Col>
           <Col w={[1/2, 1/3, 1/4 ]}>
-          <FaqSectionTitle onClick={this.handleSectionClick} data-section="registry">
-              <img src="https://www.iconexperience.com/_img/o_collection_png/green_dark_grey/512x512/plain/dog.png" />
+            <FaqSectionTitle onClick={this.handleSectionClick} data-section="registry">
+              <Icon icon="gift" />
               <span>Registry Questions</span>
             </FaqSectionTitle>
           </Col>
           <Col w={[1/2, 1/3, 1/4 ]}>
-          <FaqSectionTitle onClick={this.handleSectionClick} data-section="contact">
-              <img src="https://www.iconexperience.com/_img/o_collection_png/green_dark_grey/512x512/plain/dog.png" />
+            <FaqSectionTitle onClick={this.handleSectionClick} data-section="contact">
+              <Icon icon="envelope" />
               <span>Contact Us</span>
             </FaqSectionTitle>
           </Col>
