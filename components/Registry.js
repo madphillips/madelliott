@@ -23,6 +23,7 @@ const RegistryWrapper = styled.div`
     margin-right: auto;
     text-align: center;
     max-width: 700px;
+    padding: 0 3em;
   }
 `;
 

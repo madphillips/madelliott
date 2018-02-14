@@ -131,7 +131,7 @@ class Faqs extends React.Component {
     return Object.keys(SECTIONS).map(sectionKey => {
       const section = SECTIONS[sectionKey];
       return (
-        <Col w={[1/2, 1/3, 1/4 ]}>
+        <Col w={[1, 1/2, 1/3, 1/4 ]}>
           <FaqSectionTitle 
             data-section={sectionKey}
             onClick={this.handleSectionClick}
