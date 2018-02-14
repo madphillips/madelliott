@@ -66,12 +66,7 @@ const About = props => (
       <Col w="45%" display="flex" justify="center" align="center" wrap="wrap">
         <h2>ABOUT US</h2>
         <P>
-          Maddie and Elliott met a Freeman High School in Richmond, VA. On the first day of school,
-          they met in the bus ramp where they discovered they not only ride the same bus, they actually 
-          live just a couple houses away from each other. A few weeks later, Elliott asked Maddie to 
-          Homecoming. She refused, instead wanting to get to know Elliott first. They quickly became 
-          good friends. After a couple years, they started dating and the rest is ancient history!
-          This January they celebrated their 11th year together.
+        Maddie and Elliott met at the bus ramp in high school, where they not only discovered that they rode the same bus, but that they lived a couple of houses apart from each other. Weeks later, a smitten Elliott worked up the nerve to ask Maddie to Homecoming, and bam, she turned him down! But only for the noblest of reasons. She wanted to get to know him first. They quickly became best friends and after a couple of years, they started dating. The rest is now ancient history! This January they celebrated their 11th year together.
         </P>
       </Col>
       <Col w="55%">
