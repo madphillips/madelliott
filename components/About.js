@@ -10,6 +10,10 @@ import Container from "./Container";
 
 const AboutWrapper = styled.div`
   background: #fff;
+
+  h2 {
+    color: ${COLORS.green};
+  }
 `;
 
 const Col = styled.div`

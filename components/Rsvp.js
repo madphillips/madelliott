@@ -24,7 +24,7 @@ const RsvpContainer = styled.div`
 
   h2 {
     text-align: center;
-    color: ${COLORS.darkgreen};
+    color: ${COLORS.green};
     margin-top: 0;
   }
 

@@ -11,11 +11,9 @@ const FaqsWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  border-top: 1px solid ${COLORS.gray};
-  box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.15);
 
   h2 {
-    color: ${COLORS.darkgreen};
+    color: ${COLORS.green};
     text-align: center;
     margin: 0 auto 2em auto;
     padding: 0;
@@ -47,11 +45,12 @@ const FaqSectionTitle = styled.div`
   text-align: center;
   margin: 12px 24px;
 
-  img {
-    max-width: 40px;
-    max-height: 40px;
+  svg {
+    min-width: 36px;
+    min-height: 36px;
     display: block;
     margin: 10px auto;
+
   }
   span {
     margin: auto;

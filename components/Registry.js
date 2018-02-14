@@ -6,9 +6,13 @@ import Anchor from "./Anchor";
 
 const RegistryWrapper = styled.div`
   padding: 3em 0 0 0;
+  border-top: 1px solid ${COLORS.gray};
+  border-bottom: 1px solid ${COLORS.gray};
+  box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.15);
 
   h2 {
-    color: ${COLORS.darkgreen};
+    color: ${COLORS.green};
+    text-transform: uppercase;
     text-align: center;
     margin: 0;
   }
