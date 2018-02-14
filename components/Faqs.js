@@ -1,6 +1,7 @@
 import styled, { injectGlobal } from "styled-components";
 import { COLORS, FONTS, HEADERSIZE } from '../constants';
 import React from 'react';
+import { P } from "./Text";
 import {Flex, Box} from 'grid-styled';
 
 const FaqsWrapper = styled.div`
@@ -52,10 +53,10 @@ class Faqs extends React.Component {
   }
 
   handleSectionClick(e) {
-    const { target } = e;
-    if (target && target.dataSet && target.dataSet.section) {
+    const { currentTarget: target } = e;
+    if (target && target.dataset && target.dataset.section) {
       this.setState({
-        section: target.dataSet.section
+        section: target.dataset.section
       });
     }
   }
@@ -107,6 +108,23 @@ class Faqs extends React.Component {
               <span>Contact Us</span>
             </FaqSectionTitle>
           </Col>
+        </FlexContainer>
+        <FlexContainer>
+          {this.state.section === "ceremony" && (
+            <div>
+              <P>Ceremony Answers</P>
+            </div>
+          )}
+          {this.state.section === "guest" && (
+            <div>
+              <P>Guest Answers</P>
+            </div>
+          )}
+          {this.state.section === "media" && (
+            <div>
+              <P>Media Answers</P>
+            </div>
+          )}
         </FlexContainer>
       </FaqsWrapper>
     )
