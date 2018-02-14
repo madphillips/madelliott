@@ -13,12 +13,12 @@ const AboutWrapper = styled.div`
 `;
 
 const Col = styled.div`
-  width: ${props => props.width};
+  width: ${props => props.w};
   min-width: 400px;
   display: ${props => [props.display || "inline-block"]};
   flex-wrap: ${props => [props.wrap || "nowrap"]};
-  justify-content: ${props => [props.justifyContent || "flex-start"]};
-  align-content: ${props => [props.alignContent || "stretch"]};
+  justify-content: ${props => [props.justify || "flex-start"]};
+  align-content: ${props => [props.align || "stretch"]};
 
   img {
     max-height: 550px;
@@ -59,7 +59,7 @@ const About = props => (
   <AboutWrapper>
     <Anchor id="about-us" title="About Us" />
     <Container>
-      <Col width="45%" display="flex" justifyContent="center" alignContent="center" wrap="wrap">
+      <Col w="45%" display="flex" justify="center" align="center" wrap="wrap">
         <h2>ABOUT US</h2>
         <P>
           Maddie and Elliott met a Freeman High School in Richmond, VA. On the first day of school,
@@ -70,7 +70,7 @@ const About = props => (
           This January they celebrated their 11th year together.
         </P>
       </Col>
-      <Col width="55%">
+      <Col w="55%">
         <TrackVisibility offset={200}>
           {({ isVisible }) => (
             <ImageWrapper>
