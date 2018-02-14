@@ -21,7 +21,7 @@ const FaqsWrapper = styled.div`
 `;
 
 const FlexContainer = styled(Flex)`
-  margin: ${props => [props.margin || "2em 4em"]};
+  margin: ${props => [props.margin || "1em 4em"]};
 `;
 
 const Col = styled(Box)`
@@ -45,16 +45,19 @@ const FaqSectionTitle = styled.div`
   text-align: center;
   margin: 12px 24px;
 
+  &:hover {
+    color: ${COLORS.green};
+  }
   svg {
     min-width: 36px;
     min-height: 36px;
     display: block;
     margin: 10px auto;
-
   }
   span {
     margin: auto;
     text-transform: uppercase;
+    font-weight: bold;
   }
 `;
 
