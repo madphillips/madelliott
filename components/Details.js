@@ -55,20 +55,22 @@ const PWrapper = styled.div`
   padding: 20px 25px;
   border-radius: 5%;
   position: relative;
-  z-index: 200;
+  z-index: 3;
 `;
 
 const PArrow = styled.div`
   z-index: 1;
   position: absolute;
-  top: 0;
-  left: 215px;
-  background-color: ${COLORS.darkgreen};
-  width: 30px;
-  height: 30px;
+  top: -14px;
+  left: 50%;
+  border-style: solid;
+  border-width: 0 14px 14px 14px;
+  border-color: transparent transparent ${COLORS.darkgreen} transparent;
+  width: 0;
+  height: 0;
   margin: 0;
   padding: 0;
-  transform: translateY(-10px) rotate(45deg);
+  transform: translateX(-50%);
 `;
 
 const RecommendationCol = styled(Box)`

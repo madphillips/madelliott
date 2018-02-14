@@ -149,7 +149,7 @@ class Faqs extends React.Component {
     return (
       <FaqsWrapper>
         <Anchor id="faqs" title="Frequently Asked Questions" />
-        <h2>Have Questions? Hopefully We Have Your Answer!</h2>
+        <h2>Have Questions? Hopefully We Already Have Your Answer!</h2>
         <FlexContainer wrap="wrap" justify="center">
           {this.renderButtons()}
         </FlexContainer>
