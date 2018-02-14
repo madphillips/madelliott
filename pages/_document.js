@@ -14,6 +14,7 @@ export default class MyDocument extends Document {
       <html>
         <Head>
           <title>Maddie &amp; Elliott | Mar 23, 2018</title>
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
           {this.props.styleTags}
           <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/675456/7247592/css/fonts.css" />
         </Head>
