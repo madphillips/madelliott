@@ -43,6 +43,7 @@ const Col = styled(Box)`
   margin: 2em 0em;
 
   li {
+    vertical-align: top;
     list-style: none;
     width: 50%;
     display: inline-block;
