@@ -53,24 +53,35 @@ const PWrapper = styled.div`
   background: linear-gradient(${COLORS.darkgreen}, ${COLORS.green});
   margin: 10px 20px;
   padding: 20px 25px;
-  border-radius: 5%;
+  border-radius: 8px;
   position: relative;
   z-index: 3;
-`;
 
-const PArrow = styled.div`
-  z-index: 1;
-  position: absolute;
-  top: -14px;
-  left: 50%;
-  border-style: solid;
-  border-width: 0 14px 14px 14px;
-  border-color: transparent transparent ${COLORS.darkgreen} transparent;
-  width: 0;
-  height: 0;
-  margin: 0;
-  padding: 0;
-  transform: translateX(-50%);
+  /* Arrow */
+  &:before {
+    content: "";
+    z-index: 1;
+    display: block;
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    border-style: solid;
+    border-width: 0 14px 14px 14px;
+    border-color: transparent transparent ${COLORS.darkgreen} transparent;
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    transform: translateX(-50%);
+  }
+
+  *:first-child {
+    margin-top: 0;
+  }
+
+  *:last-child {
+    margin-bottom: 0;
+  }
 `;
 
 const RecommendationCol = styled(Box)`
@@ -102,7 +113,6 @@ const Details = () => (
         <RecommendationCol w={[ 1, 1/2 ]}>
           <h4>Going into Richmond?</h4>
           <PWrapper>
-            <PArrow></PArrow>
             <p>
             Our favorite places are in the Scott’s Addition area- our neighborhood! Especially on a beautiful day, we recommend pulling on some comfortable shoes and walking the neighborhood and BE HUNGRY/THIRSTY!
     Veil Brewery has the best IPAs in town, Buskey Cidery satisfies a cider fix, Tazza Kitchen has amazing cocktails and the amazing brick oven pizza, Sabai satisfies a spicy, Thai craving, and some creamy Gelati Celesti ice cream cools our tongues afterwards!
@@ -115,7 +125,6 @@ const Details = () => (
         <RecommendationCol w={[ 1, 1/2 ]}>
           <h4>Going into Charlottesville?</h4>
           <PWrapper>
-            <PArrow></PArrow>
             <p>
             Our favorite place in Charlottesville is the Historic Downtown Mall, which is an outdoor mall and completely dog friendly. We love bringing our pup and sitting in Citizen Burger’s outdoor patio. The Sprint Pavilion is on the far east side of the Downtown Mall and we have caught a couple of concerts there!
             </p>
