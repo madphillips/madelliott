@@ -1,0 +1,16 @@
+subscription {
+  Rsvp(
+    filter: {
+      mutation_in: [CREATED]
+    }
+  ) {
+    mutation
+    node {
+      email
+      primaryName
+      attending
+      otherNames
+      comments
+    }
+  }
+}
