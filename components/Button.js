@@ -32,6 +32,7 @@ const Button = styled(BaseButton)`
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 1px;
+  max-width: 200px;
   
   ${size};
 
