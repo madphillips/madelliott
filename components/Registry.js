@@ -36,7 +36,7 @@ const Col = styled(Box)`
 
 const VendorLogo = styled.img`
   max-width: 300px;
-  height: 220px;
+  height: 150px;
 `;
 
 const Registry  = () => (
@@ -55,12 +55,12 @@ const Registry  = () => (
     <Flex wrap="wrap" justify="center" align="flex-start">
       <Col>
         <a href="https://www.crateandbarrel.com/gift-registry/maddie-phillips-and-elliott-pogue/r5720998" target="_blank">
-          <VendorLogo src="/static/crateandbarrel.svg" />
+          <VendorLogo src="/static/crateandbarrel-formatted.svg" />
         </a>
       </Col>
       <Col>
         <a href="https://www.amazon.com/wedding/maddie-phillips-elliott-pogue-richmond-march-2018/registry/12WY5AFUB093R" target="_blank">
-          <VendorLogo src="/static/amazon.svg" />
+          <VendorLogo src="/static/amazon-formatted.svg" />
         </a>
       </Col>
     </Flex>
