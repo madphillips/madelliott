@@ -9,7 +9,7 @@ import { P } from "./Text";
 const RecommendationWrapper = styled.div `
   padding: 3em 4em 0;
   background: ${props => props.hasBackground ? "url('https://images.unsplash.com/photo-1501551685-7a8c9f7324d9?ixlib=rb-0.3.5&s=af8fece353d4bbef0c6cd33ae7776c9a&auto=format&fit=crop&w=634&q=80') center no-repeat" : "transparent"};
-  color: ${props => props.hasBackground ? COLORS[props.color]: "gray"};
+  color: ${props => props.hasBackground ? COLORS[props.color]: "#595959"};
   text-shadow: ${props => props.hasBackground ? "0px 0px 5px black" : "none"};
 
   h2 {
