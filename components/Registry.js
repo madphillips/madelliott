@@ -3,6 +3,7 @@ import styled, { injectGlobal } from "styled-components";
 import { COLORS, FONTS, HEADERSIZE } from '../constants';
 import {Flex, Box} from 'grid-styled';
 import Anchor from "./Anchor";
+import { P } from "./Text";
 
 const RegistryWrapper = styled.div`
   padding: 3em 0 0 0;
@@ -42,11 +43,13 @@ const Registry  = () => (
   <RegistryWrapper>
     <Anchor id="registry" title="Registry" />
     <h2>Registry</h2>
-    <p>
-      The greatest wedding gift you could give to Maddie and Elliott is the pleasure of your company on their 
-      special day, but, of course, their home won't stock itself. Therefore, they are registered at Crate &amp; 
-      Barrel and Amazon. You can click on the images below to link directly to the registries.
-    </p>
+    <Box style={{ maxWidth: 600 }} mx="auto">
+      <P fontFamily="textSerif" fontSize={16}>
+        The greatest wedding gift you could give to Maddie and Elliott is the pleasure of your company on their 
+        special day, but, of course, their home won't stock itself. Therefore, they are registered at Crate &amp; 
+        Barrel and Amazon. You can click on the images below to link directly to the registries.
+      </P>
+    </Box>
     <Flex wrap="wrap" justify="center" align="flex-start">
       <Col>
         <a href="https://www.crateandbarrel.com/gift-registry/maddie-phillips-and-elliott-pogue/r5720998" target="_blank">

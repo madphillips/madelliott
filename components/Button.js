@@ -22,6 +22,7 @@ const size = ({ size }) => {
 const Button = styled(BaseButton)`
   position: relative;
   display: inline-block;
+  background: transparent;
   color: ${props => props.variant === "solid" ? "#fff" : getColor(props)};
   font-size: 16px;
   font-family: ${FONTS.textSans};
