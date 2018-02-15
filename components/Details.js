@@ -46,7 +46,7 @@ const FlexContainer = props => <Flex my={3} mx={-2} {...props} />;
 const Col = props => <Box my={3} px={2} style={{ textAlign: "center" }} {...props} />;
 
 const ArrowBox = styled.div`
-  background: linear-gradient(${COLORS.darkgreen}, ${COLORS.green});
+  background: linear-gradient(rgba(91, 102, 82, 0.75), rgba(157,169,147,0.57));
   padding: 20px 25px;
   border-radius: 8px;
   position: relative;
