@@ -8,7 +8,7 @@ import { P } from "./Text";
 
 const RecommendationWrapper = styled.div `
   padding: 3em 4em 0;
-  background: ${props => props.hasBackground ? "url('/static/maddie-and-elliott-coffee-1.jpg') center no-repeat" : "transparent"};
+  background: ${props => props.hasBackground ? "url('/static/maddie-and-elliott-coffee-2.jpg') center no-repeat" : "transparent"};
   color: ${props => props.hasBackground ? COLORS[props.color]: "#595959"};
   text-shadow: ${props => props.hasBackground ? "0px 0px 5px black" : "none"};
 
