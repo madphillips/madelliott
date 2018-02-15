@@ -131,7 +131,7 @@ const Details = () => (
           <Button as="a" href="https://richmondwest.house.hyatt.com/en/hotel/home.html" target="_blank" color="darkgreen">
             Hyatt House Richmond West
           </Button>
-          <P fontFamily="textSerif">1180 W Broad Street<br />Suite 1098<br />Henrico, Virginia 23233<br />804.360.7021</P>
+          <P fontFamily="textSerif">11800 W Broad Street<br />Suite 1098<br />Henrico, Virginia 23233<br />804.360.7021</P>
         </Col>
       </FlexContainer>
     </Box>
