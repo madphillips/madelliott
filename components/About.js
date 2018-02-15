@@ -9,6 +9,7 @@ import { shade } from "polished";
 import Container from "./Container";
 
 const AboutWrapper = styled.div`
+  padding-top: 32px;
   background: #fff;
 
   h2 {
@@ -16,13 +17,8 @@ const AboutWrapper = styled.div`
   }
 `;
 
-const Col = styled.div`
-  width: ${props => props.w};
+const Col = styled(Box)`
   min-width: 400px;
-  display: ${props => [props.display || "inline-block"]};
-  flex-wrap: ${props => [props.wrap || "nowrap"]};
-  justify-content: ${props => [props.justify || "flex-start"]};
-  align-content: ${props => [props.align || "stretch"]};
 
   img {
     max-height: 550px;
@@ -62,14 +58,16 @@ const Quote = styled.p`
 const About = props => (
   <AboutWrapper>
     <Anchor id="about-us" title="About Us" />
-    <Container>
-      <Col w="45%" display="flex" justify="center" align="center" wrap="wrap">
-        <h2>ABOUT US</h2>
-        <P>
-        Maddie and Elliott met at the bus ramp in high school, where they not only discovered that they rode the same bus, but that they lived a couple of houses apart from each other. Weeks later, a smitten Elliott worked up the nerve to ask Maddie to Homecoming, and bam, she turned him down! But only for the noblest of reasons. She wanted to get to know him first. They quickly became best friends and after a couple of years, they started dating. The rest is now ancient history! This January they celebrated their 11th year together.
-        </P>
-      </Col>
-      <Col w="55%">
+    <Container justify="center">
+      <Flex w={[1, .45]} display="flex" align="center" wrap>
+        <Box>
+          <h2>ABOUT US</h2>
+          <P>
+          Maddie and Elliott met at the bus ramp in high school, where they not only discovered that they rode the same bus, but that they lived a couple of houses apart from each other. Weeks later, a smitten Elliott worked up the nerve to ask Maddie to Homecoming, and bam, she turned him down! But only for the noblest of reasons. She wanted to get to know him first. They quickly became best friends and after a couple of years, they started dating. The rest is now ancient history! This January they celebrated their 11th year together.
+          </P>
+        </Box>
+      </Flex>
+      <Col w={[1, .55]}>
         <TrackVisibility offset={200}>
           {({ isVisible }) => (
             <ImageWrapper>

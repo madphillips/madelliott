@@ -112,7 +112,7 @@ const Details = () => (
       </FlexContainer>
     </Box>
     <Box style={{ textAlign: "center" }}>
-      <h3>Accomodations</h3>
+      <h3>Accommodations</h3>
       <Box style={{ maxWidth: 600 }} mx="auto">
         <P fontFamily="textSerif" fontSize={18}>
           The nearest hotels are in the Short Pump area, 

@@ -45,9 +45,11 @@ const Registry  = () => (
     <h2>Registry</h2>
     <Box style={{ maxWidth: 600 }} mx="auto">
       <P fontFamily="textSerif" fontSize={16}>
-        The greatest wedding gift you could give to Maddie and Elliott is the pleasure of your company on their 
-        special day, but, of course, their home won't stock itself. Therefore, they are registered at Crate &amp; 
-        Barrel and Amazon. You can click on the images below to link directly to the registries.
+      The greatest wedding gift you can give us is the pleasure of
+       your company on our special day. If, however, you have an
+       irresistible urge to help us outfit our home, we're registered
+       at Crate &amp; Barrel and Amazon. You can click on the images
+       below to link directly to the registries.
       </P>
     </Box>
     <Flex wrap="wrap" justify="center" align="flex-start">
