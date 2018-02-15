@@ -8,6 +8,17 @@ import { P } from "./Text";
 
 const RecommendationWrapper = styled.div `
   padding: 3em 4em 0;
+  background: ${props => props.hasBackground ? "url('https://images.unsplash.com/photo-1501551685-7a8c9f7324d9?ixlib=rb-0.3.5&s=af8fece353d4bbef0c6cd33ae7776c9a&auto=format&fit=crop&w=634&q=80') center no-repeat" : "transparent"};
+  color: ${props => props.hasBackground ? COLORS[props.color]: "gray"};
+  text-shadow: ${props => props.hasBackground ? "0px 0px 5px black" : "none"};
+
+  h2 {
+    color: ${props => props.hasBackground ? COLORS[props.color]: COLORS["green"]};
+  }
+
+  h3 {
+    color: ${props => props.hasBackground ? COLORS[props.color]: COLORS["darkgreen"]};
+  }
 `;
 
 const DetailsWrapper = styled.div`
@@ -17,11 +28,10 @@ const DetailsWrapper = styled.div`
   justify-content: center;
 
   h2 {
-    color: ${COLORS.green};
     text-align: center;
   }
+
   h3 {
-    color: ${COLORS.darkgreen};
     margin-top: 0;
   }
   h4 {
@@ -41,6 +51,7 @@ const ArrowBox = styled.div`
   border-radius: 8px;
   position: relative;
   z-index: 3;
+  text-shadow: none;
 
   /* Arrow */
   &:before {
@@ -79,7 +90,7 @@ const RecommendationCol = styled(Col)`
 
 const Details = () => (
   <DetailsWrapper>
-    <RecommendationWrapper hasBackground="true">
+    <RecommendationWrapper color="white" hasBackground="true">
       <Anchor id="wedding-details" title="Wedding Details" />
       <h2>DETAILS</h2>
       <Box pt={2} style={{ textAlign: "center" }}>
