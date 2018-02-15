@@ -6,7 +6,7 @@ import Anchor from "./Anchor";
 import { P } from "./Text";
 
 const RegistryWrapper = styled.div`
-  padding: 3em 0 0 0;
+  padding: 3em 0;
   border-top: 1px solid ${COLORS.gray};
   border-bottom: 1px solid ${COLORS.gray};
   box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.15);
