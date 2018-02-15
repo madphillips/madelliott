@@ -34,7 +34,7 @@ const ImageWrapper = styled.div`
 `;
 
 const Quote = styled.p`
-  font-size: 1em;
+  font-size: 16px;
   line-height: 1.25em!important;
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
   padding: 1.5em 2em;
@@ -43,6 +43,7 @@ const Quote = styled.p`
   margin: 1.5em 0;
   width: 350px;
   position: absolute;
+  font-family: ${FONTS.textSerif};
   left: ${props => [props.left || "auto"]};
   right: ${props => [props.right || "auto"]};
   top: ${props => [props.top || "auto"]};

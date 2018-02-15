@@ -87,7 +87,7 @@ const Details = () => (
       </Box>
       <FlexContainer wrap>
         <RecommendationCol w={[ 1, 1/2 ]}>
-          <h4>Going into Richmond?</h4>
+          <h4>Planning to Visit Richmond?</h4>
           <ArrowBox>
             <P>
             Our favorite places are in the Scott’s Addition area- our neighborhood! Especially on a beautiful day, we recommend pulling on some comfortable shoes and walking the neighborhood and BE HUNGRY/THIRSTY!
@@ -99,7 +99,7 @@ const Details = () => (
           </ArrowBox>
         </RecommendationCol>
         <RecommendationCol w={[ 1, 1/2 ]}>
-          <h4>Going into Charlottesville?</h4>
+          <h4>Planning to Visit Charlottesville?</h4>
           <ArrowBox>
             <P>
             Our favorite place in Charlottesville is the Historic Downtown Mall, which is an outdoor mall and completely dog friendly. We love bringing our pup and sitting in Citizen Burger’s outdoor patio. The Sprint Pavilion is on the far east side of the Downtown Mall and we have caught a couple of concerts there!
