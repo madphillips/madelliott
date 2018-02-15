@@ -105,11 +105,10 @@ const Details = () => (
             <h4>Planning to Visit Richmond?</h4>
             <ArrowBox>
               <P>
-              Our favorite places are in the Scott’s Addition area- our neighborhood! Especially on a beautiful day, we recommend pulling on some comfortable shoes and walking the neighborhood and BE HUNGRY/THIRSTY!
-      Veil Brewery has the best IPAs in town, Buskey Cidery satisfies a cider fix, Tazza Kitchen has amazing cocktails and the amazing brick oven pizza, Sabai satisfies a spicy, Thai craving, and some creamy Gelati Celesti ice cream cools our tongues afterwards!
+              Some of our favorite eateries and breweries are located in the Scott’s Addition area, which just happens to be our neighborhood! We recommend you throw on a pair of comfortable shoes and walk the area to get a sense of the transition that's underway. Be sure to come HUNGRY and THIRSTY! Veil Brewing has the best IPAs in town, Buskey Cidery satisfies a cider fix, Tazza Kitchen has amazing cocktails and brick oven pizzas, Sabai satisfies a spicy, Thai craving, and Gelati Celesti ice cream is truly heavenly! Prefer a relaxing cup of coffee? We love Black Hand Coffee Company in the Museum District, which is small, quaint and perfect for bringing your laptop or a good book.
               </P>
               <P>
-              Shopping more your thing? Carytown is the local shopping strip with lots of locally owned shops and restaurants and great walkability. Need more? Short Pump is the a shopping and restaurant mecca and a quick hop on 64W will take you there. Prefer a relaxing cup of coffee? We love Black Hand Coffee Company in the Museum District, whose small but quaint atmosphere is perfect for bringing your laptop or a good book.
+              Shopping more your thing? Carytown is an urban shopping strip with lots of fun, quirky locally-owned shops and restaurants and great walkability. Need more? The Short Pump area is Richmond's suburban shopping and restaurant mecca, and a quick hop on 64W will get you there.
               </P>
             </ArrowBox>
           </RecommendationCol>
@@ -117,10 +116,10 @@ const Details = () => (
             <h4>Planning to Visit Charlottesville?</h4>
             <ArrowBox>
               <P>
-              Our favorite place in Charlottesville is the Historic Downtown Mall, which is an outdoor mall and completely dog friendly. We love bringing our pup and sitting in Citizen Burger’s outdoor patio. The Sprint Pavilion is on the far east side of the Downtown Mall and we have caught a couple of concerts there!
+              Our favorite place in Charlottesville is the Historic Downtown Mall, which is dog-friendly and perfect for people watching. We love bringing our pup and sitting in Citizen Burger’s outdoor patio. The mall features a combination of locally-owned shops, cool restaurants and movie theaters. The Sprint Pavilion is on the far east side of the Downtown Mall and we've caught a couple of great concerts there!
               </P>
               <P>
-                For the historian in you, Monticello is also a quick drive south of Charlottesville with a colonial dining experience at Michie Tavern right around the corner! Looking for a drink? Charlottesville’s beer scene is starting to grown and is also surrounded by numerous excellent wineries, we have yet to try one we didn’t like!
+              For the historian in you, Thomas Jefferson’s Monticello is also a quick drive south of Charlottesville and right around the corner is Michie Tavern, which offers a unique colonial dining experience! Looking for a drink? Charlottesville’s beer scene is starting to grow and the area is surrounded by numerous excellent wineries. We have yet to try one we don’t like!
               </P>
             </ArrowBox>
           </RecommendationCol>
