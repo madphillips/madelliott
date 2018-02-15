@@ -19,7 +19,6 @@ const DetailsWrapper = styled.div`
   h2 {
     color: ${COLORS.green};
     text-align: center;
-    margin: 0;
   }
   h3 {
     color: ${COLORS.darkgreen};
